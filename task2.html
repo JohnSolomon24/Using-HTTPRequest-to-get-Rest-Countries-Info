@@ -30,7 +30,7 @@
 
       
       var method = "GET";
-      var url = "https://restcountries.com/v3.1/all";
+      var url = "https://restcountries.com/v3.1/all?fields=name,population";
 
    
       xhr.open(method, url);
@@ -43,8 +43,8 @@
 
          z = countriesdetails.filter( key => { if(key.population < 200000 )
 {
-    console.log(key.name.common);
-    console.log(key);
+    console.log("Country Name :", key.name.common);
+   console.log("Population :", key.population);
     console.log("\n");
 }
 

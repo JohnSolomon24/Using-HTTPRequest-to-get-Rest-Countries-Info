@@ -24,7 +24,7 @@
 
       
       var method = "GET";
-      var url = "https://restcountries.com/v3.1/all";
+      var url = "https://restcountries.com/v3.1/all?fields=region,name";
 
    
       xhr.open(method, url);
@@ -41,8 +41,8 @@
           
          z = countriesdetails.filter( key => { if(key.region =="Asia")
 {
-    console.log(key.name.common);
-    console.log(key);
+    console.log("Country Name :", key.name.common);
+    console.log("Region :", key.region);
     console.log("\n");
 }
 

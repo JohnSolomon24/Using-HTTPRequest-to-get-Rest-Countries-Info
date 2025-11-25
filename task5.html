@@ -38,7 +38,7 @@
 
       
       var method = "GET";
-      var url = "https://restcountries.com/v3.1/all";
+      var url = "https://restcountries.com/v3.1/all?fields=currencies,name";
 
    
       xhr.open(method, url);
@@ -62,7 +62,7 @@
             {
        
        console.log("Name    :",i.name.common);
-       console.log(i);
+       console.log("Currency :",i.currencies.USD.name);
        console.log("\n");
             
     }

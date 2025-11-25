@@ -33,7 +33,7 @@
 
       
       var method = "GET";
-      var url = "https://restcountries.com/v3.1/all";
+      var url = "https://restcountries.com/v3.1/all?fields=name,capital,flags";
 
    
       xhr.open(method, url);
@@ -58,7 +58,7 @@
        if(i.capital){
        console.log("Capital :",i.capital[0]);
        }
-       console.log("Flag    :",i.flag);
+       console.log("Flag    :",i.flags.svg);
        console.log("\n");
             
    
